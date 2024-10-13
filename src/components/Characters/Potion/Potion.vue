@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PotionSVG />
+    <!-- <PotionSVG /> -->
   </div>
 </template>
 

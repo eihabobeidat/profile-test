@@ -1,6 +1,6 @@
 <template>
   <div id="abiz">
-    <ABizSVG />
+    <!-- <ABizSVG /> -->
   </div>
 </template>
 

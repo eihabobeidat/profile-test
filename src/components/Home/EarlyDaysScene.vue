@@ -1,12 +1,6 @@
 <template>
   <div class="earlyDays">
     <TitleSection scene="earlyTitle">
-      <TitleFunction
-        params="2008,2011"
-        subtitle="&lt;table&gt;&lt;tr&gt;&lt;td&gt;..."
-        >earlyDays</TitleFunction
-      >
-
       <div class="clouds cloud-1"></div>
       <Pepe v-bind="{ isPlaying }" />
       <div class="clouds cloud-2"></div>
@@ -16,41 +10,59 @@
 
     <SceneSection id="early-days">
       <TextBlock>
-        <p>Design & illustration.</p>
+        <p>Looking to break down barriers within your organization?</p>
         <p class="-big">
-          A frontend developer<br />
-          <span class="-purple">with one foothold in arts.</span>
+          <span class="-purple">PROMPTO</span>
+        </p>
+        <p>
+          PROMPTO is designed to enhance employee connections, streamline
+          communication, and boost productivity. Adopt, connect, and empower
+          your employees to create a seamless, collaborative work environment.
+          PROMPTO’s user-friendly platform helps you speed up response times and
+          improve internal communication, ensuring your team stays productive
+          and connected.
         </p>
       </TextBlock>
     </SceneSection>
     <SceneSection id="early-days2">
       <TextBlock>
         <p class="-big">
-          <span class="-purple">Freelancing</span> &
-          <span class="-purple">startuping,</span><br />
-          <span class="-purple">Inches</span> &
-          <span class="-purple">pixels.</span>
+          <span class="-purple">Why Choose DELV?</span>
         </p>
-        <p>
-          Illustrating album arts, book covers, and billboards as a freelancer.
-          And designing websites, online magazines, and news portals at my first
-          web studio.<br />
-        </p>
+        <ul style="list-style-type: none; padding: 0">
+          <li style="margin-bottom: 16px">
+            <strong>Expertise Across Industries:</strong> From governments to
+            big enterprises, everyone trusts DELV. We're kind of a big deal!
+          </li>
+          <li style="margin-bottom: 16px">
+            <strong>Agility and Speed:</strong> Got an idea? We’ll turn it into
+            an MVP in 1-2 months. Blink, and it's done!
+          </li>
+          <li style="margin-bottom: 16px">
+            <strong>AI Innovation:</strong> Our AI magic boosts your products
+            and helps you make smarter decisions. You're welcome!
+          </li>
+          <li style="margin-bottom: 16px">
+            <strong>The DELV Difference:</strong> We make tech work for you, not
+            the other way around. Say goodbye to barriers!
+          </li>
+          <li style="margin-bottom: 16px">
+            <strong>Intelligent Automation & SmartLockers:</strong> From
+            automating tasks to SmartLockers, we make life easier for your team.
+          </li>
+          <li style="margin-bottom: 16px">
+            <strong>Partnerships for Growth:</strong> ServiceNow integrations?
+            Yep, we do that too. New opportunities are just a click away!
+          </li>
+          <li style="margin-bottom: 16px">
+            <strong>Careers & Internships – Shaping the Future:</strong> Our
+            internship program is shaping future innovators. We’re building
+            Australia’s next tech leaders!
+          </li>
+        </ul>
       </TextBlock>
     </SceneSection>
-    <SceneSection id="early-days3">
-      <TextBlock>
-        <p>
-          We've proudly fueled the starring<br />
-          of some big Brazilian names such as
-          <span class="-big -purple"
-            ><em>Porta dos Fundos</em>, <em>Kibe Loco</em>, Fhits.tv,
-            <em>Galo Frito</em></span
-          >
-          among many others...
-        </p>
-      </TextBlock>
-    </SceneSection>
+    <SceneSection id="early-days3"> </SceneSection>
   </div>
 </template>
 
@@ -58,7 +70,6 @@
 import Pepe from '../Characters/Pepe/Pepe.vue'
 import Ocean from '../Characters/Ocean/Ocean.vue'
 import TitleSection from '../TitleSection.vue'
-import TitleFunction from '../TitleFunction.vue'
 import TextBlock from '../TextBlock.vue'
 import SceneSection from '../SceneSection.vue'
 
@@ -68,7 +79,6 @@ export default {
     TitleSection,
     Pepe,
     Ocean,
-    TitleFunction,
     TextBlock,
     SceneSection,
   },

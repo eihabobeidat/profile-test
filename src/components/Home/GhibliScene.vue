@@ -3,14 +3,12 @@
     <SceneSection id="Ghibli">
       <TextBlock>
         <p>
-          Before designing for web, I was creating
-          <span class="-big -purple">
-            3D models, matte painting and advertisements
-          </span>
-          for many brands, TV commercials, games...
+          <span class="-big"><em>Get in Touch Today</em></span>
+          Reach out to us and discover how DELV can help you achieve your goals.
+          Whether you need assistance with mobile management, AI integration, or
+          enterprise app development, we’ve got you covered.
         </p>
       </TextBlock>
-
       <template #container>
         <div class="sky">
           <div class="cloud c1"></div>
@@ -26,16 +24,13 @@
     <SceneSection id="Ghibli2" />
     <SceneSection id="Ghibli3">
       <TextBlock>
-        <p class="-big">
-          And studying
-          <span class="-purple"
-            >Philosophy, Japanese animation, fine arts and video games.</span
-          >
-        </p>
         <p>
-          All of these subjects have a major impact on how I start and develop
-          my creative processes, leading the way on how I view web development
-          today.
+          <span class="-big">Transform Your Business</span>
+
+          Rlevate your business with cutting-edge technology and innovative
+          solutions? At DELV, we’re here to guide you through the digital
+          transformation process, helping you leverage AI, mobility, and
+          emerging tech to unlock new possibilities.
         </p>
       </TextBlock>
     </SceneSection>

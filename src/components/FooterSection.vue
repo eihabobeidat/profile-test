@@ -1,9 +1,9 @@
 <template>
   <footer class="footer">
-    <p>Made with 🤍 in 2018</p>
-    
-    <p>awwwards.winner:</p>
-    <ul class="awwwards">
+    <p>DELV CO.</p>
+
+    <p>info@delv.com</p>
+    <!-- <ul class="awwwards">
       <li>
         <a href="https://www.awwwards.com/sites/iuri-is" target="_blank"
           ><svg width="53.08" height="171.358">
@@ -52,7 +52,7 @@
           </svg>
         </a>
       </li>
-    </ul>
+    </ul> -->
   </footer>
 </template>
 

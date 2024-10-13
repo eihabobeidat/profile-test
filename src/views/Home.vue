@@ -4,9 +4,10 @@
     <GapBlock />
 
     <TitleSection scene="curriculum">
-      <TitleFunction params="/^.*$/gi" subtitle="&lt;WorkShowcase&gt;"
-        >myCV</TitleFunction
-      >
+      <TitleFunction
+        params="Keep your business ahead of the game"
+        subtitle="We unleash cutting-edge tech that skyrockets productivity and transforms the employee experience. At DELV, we see every challenge as fuel for innovation — whether it's mobile devices, AI, or the next big thing, we make the future happen today."
+      ></TitleFunction>
     </TitleSection>
 
     <BizScene :isPlaying="isPlaying.Biz" />
@@ -15,7 +16,7 @@
     <EarlyDaysScene :isPlaying="isPlaying.EarlyDays" />
     <GapBlock />
 
-    <TitleSection scene="ArtPhiGamesTitle">
+    <!-- <TitleSection scene="ArtPhiGamesTitle">
       <TitleFunction subtitle="background.bmp">
         <span
           class="line"
@@ -25,9 +26,9 @@
           <span class="params">${</span>{{ text }}<span class="params">}</span>
         </span>
       </TitleFunction>
-    </TitleSection>
+    </TitleSection> -->
 
-    <SuperMarioScene />
+    <!-- <SuperMarioScene /> -->
     <GapBlock />
 
     <GhibliScene :isPlaying="isPlaying.Ghibli" />
@@ -41,18 +42,12 @@
 <script>
 import { TimelineMax, TweenLite, Power0, Power1, Power2, Power3 } from 'gsap'
 import * as ScrollMagic from 'scrollmagic'
-import {
-  DOM,
-  removeBodyClass,
-  addBodyClass,
-  isReverse,
-  isForward,
-} from '@/utils'
+import { DOM, removeBodyClass, addBodyClass, isReverse } from '@/utils'
 import AudioMarioStart from '../components/Characters/SuperMario/assets/smw_princess_help.ogg'
 import IntroScene from '../components/Home/IntroScene.vue'
 import BizScene from '../components/Home/BizScene.vue'
 import EarlyDaysScene from '../components/Home/EarlyDaysScene.vue'
-import SuperMarioScene from '../components/Home/SuperMarioScene.vue'
+// import SuperMarioScene from '../components/Home/SuperMarioScene.vue'
 import GhibliScene from '../components/Home/GhibliScene.vue'
 import WrapperScene from '../components/Home/WrapperScene.vue'
 import ThanksScene from '../components/Home/ThanksScene.vue'
@@ -66,7 +61,7 @@ export default {
     IntroScene,
     BizScene,
     EarlyDaysScene,
-    SuperMarioScene,
+    // SuperMarioScene,
     GhibliScene,
     WrapperScene,
     ThanksScene,
@@ -107,8 +102,8 @@ export default {
     this.sceneOcean()
     this.sceneFloatingHead()
     this.sceneSunset()
-    this.sceneArtPhiGames()
-    this.sceneMario()
+    // this.sceneArtPhiGames()
+    // this.sceneMario()
     this.sceneGhibli()
     this.sceneWrapper()
   },
@@ -146,8 +141,8 @@ export default {
         early1: DOM.get('#early-days.scene'),
         early2: DOM.get('#early-days2.scene'),
         early3: DOM.get('#early-days3.scene'),
-        artPhiGamesTitle: DOM.get('#ArtPhiGamesTitle.scene'),
-        mario: DOM.get('#Mario.scene'),
+        // artPhiGamesTitle: DOM.get('#ArtPhiGamesTitle.scene'),
+        // mario: DOM.get('#Mario.scene'),
         ghibli: DOM.get('#Ghibli.scene'),
         ghibli2: DOM.get('#Ghibli2.scene'),
         ghibli3: DOM.get('#Ghibli3.scene'),
@@ -235,24 +230,24 @@ export default {
       this.scrollMagicScene.early3.on('enter', () => {
         removeBodyClass('is-playing-mario', 'blue-background')
       })
-      this.scrollMagicScene.artPhiGamesTitle.on('enter', () => {
-        removeBodyClass('is-playing-mario', 'blue-background')
-      })
-      this.scrollMagicScene.mario
-        .on('enter', (e) => {
-          if (isForward(e)) {
-            this.isPlaying.EarlyDays = false
-          }
-          if (isReverse(e)) {
-            addBodyClass('blue-background')
-          }
-        })
-        .on('leave', (e) => {
-          if (isReverse(e)) {
-            this.isPlaying.Ghibli = false
-          }
-          removeBodyClass('blue-background')
-        })
+      // this.scrollMagicScene.artPhiGamesTitle.on('enter', () => {
+      //   removeBodyClass('is-playing-mario', 'blue-background')
+      // })
+      // this.scrollMagicScene.mario
+      //   .on('enter', (e) => {
+      //     if (isForward(e)) {
+      //       this.isPlaying.EarlyDays = false
+      //     }
+      //     if (isReverse(e)) {
+      //       addBodyClass('blue-background')
+      //     }
+      //   })
+      //   .on('leave', (e) => {
+      //     if (isReverse(e)) {
+      //       this.isPlaying.Ghibli = false
+      //     }
+      //     removeBodyClass('blue-background')
+      //   })
       this.scrollMagicScene.ghibli
         .on('enter', () => {
           this.isPlaying.Ghibli = true
@@ -632,37 +627,37 @@ export default {
         .set('#Mario .container', { autoAlpha: 0 })
         .to('.pepe-scenery', 8, { autoAlpha: 0 })
     },
-    sceneArtPhiGames() {
-      this.timelines.artPhiGamesTitle
-        .set('#Mario .container', { autoAlpha: 0 })
-        .addLabel('start', 1)
-        .to('#ArtPhiGamesTitle .title-container', 1, { autoAlpha: 1 })
-        .staggerFrom('#ArtPhiGamesTitle .title .line', 4, {
-          yPercent: -50,
-          autoAlpha: 0,
-          rotationX: 90,
-          transformOrigin: '50% 50% -100px',
-          ease: Power3.easeOut,
-          stagger: 0.5,
-        })
-        .from(
-          '#ArtPhiGamesTitle .std',
-          4,
-          {
-            yPercent: 50,
-            autoAlpha: 0,
-            rotationX: -90,
-            transformOrigin: '50% 50% 100px',
-            ease: Power3.easeOut,
-          },
-          '-=1'
-        )
-        .to('#ArtPhiGamesTitle .title, #ArtPhiGamesTitle .std', 3, {
-          yPercent: -100,
-          autoAlpha: 0,
-        })
-        .set('#earlyTitle .title-container', { autoAlpha: 1 })
-    },
+    // sceneArtPhiGames() {
+    //   this.timelines.artPhiGamesTitle
+    //     .set('#Mario .container', { autoAlpha: 0 })
+    //     .addLabel('start', 1)
+    //     .to('#ArtPhiGamesTitle .title-container', 1, { autoAlpha: 1 })
+    //     .staggerFrom('#ArtPhiGamesTitle .title .line', 4, {
+    //       yPercent: -50,
+    //       autoAlpha: 0,
+    //       rotationX: 90,
+    //       transformOrigin: '50% 50% -100px',
+    //       ease: Power3.easeOut,
+    //       stagger: 0.5,
+    //     })
+    //     .from(
+    //       '#ArtPhiGamesTitle .std',
+    //       4,
+    //       {
+    //         yPercent: 50,
+    //         autoAlpha: 0,
+    //         rotationX: -90,
+    //         transformOrigin: '50% 50% 100px',
+    //         ease: Power3.easeOut,
+    //       },
+    //       '-=1'
+    //     )
+    //     .to('#ArtPhiGamesTitle .title, #ArtPhiGamesTitle .std', 3, {
+    //       yPercent: -100,
+    //       autoAlpha: 0,
+    //     })
+    //     .set('#earlyTitle .title-container', { autoAlpha: 1 })
+    // },
     sceneMario() {
       // using tweener for precise timing
       this.tweeners.mario

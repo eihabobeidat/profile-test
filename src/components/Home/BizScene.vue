@@ -1,26 +1,30 @@
 <template>
   <div class="bizScene">
     <TitleSection scene="bizTitle">
-      <TitleFunction params="2011,2019">biz</TitleFunction>
+      <TitleFunction params="">Elevating Every Experience</TitleFunction>
     </TitleSection>
 
     <SceneSection id="biz1">
       <TextBlock>
-        <p class="-big">
-          From 2011 to 2019 I was
-          <strong class="-purple">Head of Frontend</strong>
-          @
-          <a
-            href="https://www.bizcommerce.com.br/"
-            target="_blank"
-            title="Visit Biz Commerce's website"
-          >
-            biz</a
-          >.
+        <p>
+          Since 2006,
+          <strong class="-purple">DELV</strong>
+          isn’t just another tech company—we’re your innovation sidekick. We’re
+          obsessed with staying ahead of the curve, helping you empower your
+          team and transform your workplace. Our mission? To make work smoother,
+          faster, and way more productive, with zero friction. Our crew of
+          strategists, tech wizards, engineers, and innovators come together to
+          create solutions that actually matter. Whether it's enterprise
+          mobility or AI magic, everything we do is backed by a deep love for
+          the digital world and a future-focused mindset.
         </p>
         <p>
-          A SaaS e-commerce platform focused on simplifying and customizing the
-          use of Magento.
+          Trusted by governments, banks, and top-tier companies, DELV combines
+          industry expertise with lightning-fast innovation. We turn ideas into
+          MVPs in just 1-2 months, keeping you ahead of the game. With our AI
+          wizardry, we elevate your products and make smarter decisions feel
+          effortless. In short, we’re your go-to partner for staying ahead in a
+          fast-moving world!
         </p>
       </TextBlock>
       <template #container>
@@ -38,23 +42,28 @@
     <SceneSection id="biz2">
       <TextBlock>
         <p>
-          Throughout these years we delivered hundreds of
+          Get ready to blast off with our products!
           <span class="-big -purple">
-            tools, modules, integrations, and custom projects
+            AI-Powered Innovation. Unmatched Speed. Expertise You Can Trust.
           </span>
-          for online stores and service providers.
+          We’re not just aiming high — we’re heading to space!
         </p>
       </TextBlock>
     </SceneSection>
     <SceneSection id="biz3">
       <TextBlock>
         <p>
-          biz currently runs
           <span class="-big">
-            <span class="-purple">+1200 stores</span>, payment & shipping
-            integrations with
-            <span class="-purple">thousands of transactions</span> daily.
+            OneFleet
+            <span class="-purple">
+              end-to-end device lifecycle management Paired with
+              SmartLockers.</span
+            >
           </span>
+          this system ensures seamless device management, reducing downtime and
+          improving the employee experience. From handset replenishments to
+          secure migrations, OneFleet is trusted by governments, financial
+          institutions and leading enterprises across Australia.
         </p>
       </TextBlock>
     </SceneSection>

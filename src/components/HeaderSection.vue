@@ -3,7 +3,15 @@
     <div class="header-bg"></div>
 
     <div class="header-container">
-      <div class="header-breadcrumb">{{ $route.name }}</div>
+      <div class="header-breadcrumb" style="display: flex; align-items: center">
+        <img
+          :src="require('@/assets/delv.png')"
+          alt="Logo"
+          style="width: 90px; height: auto; margin-right: 8px"
+        />
+
+        <!-- <span>{{ $route.name }}</span> -->
+      </div>
 
       <button
         title="Open menu"
@@ -30,22 +38,22 @@
 
         <ul>
           <li>
-            <router-link to="/" title="Home">.is()</router-link>
+            <router-link to="/" title="Home">Home</router-link>
           </li>
           <li>
-            <router-link to="/about" title="About me">.about()</router-link>
+            <router-link to="/about" title="About me">Vision</router-link>
           </li>
           <li>
             <a :href="`mailto:${data.email}`" title="Send me an email"
-              >.email()</a
+              >Contact</a
             >
           </li>
-          <li v-for="link in data.links" :key="link.url" class="social-link">
+          <!-- <li v-for="link in data.links" :key="link.url" class="social-link">
             <a :href="link.url" :title="link.title" target="_blank">
               {{ link.label || null }}
               <component v-if="link.icon" :is="link.icon" />
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </div>

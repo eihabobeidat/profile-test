@@ -5,10 +5,9 @@ import NProgress from 'nprogress'
 
 Vue.use(Router)
 
-const TITLE = 'iuri.is'
+const TITLE = 'Delv'
 const URL = 'https://iuri.is/'
-const ABOUT =
-  'Frontend developer heavily influenced by storytelling, interactions, and UX. Addicted to music, visual arts, and games.'
+const ABOUT = 'About delv'
 
 const router = new Router({
   mode: 'history',
@@ -16,7 +15,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: '.is()',
+      name: 'home',
       component: Home,
       meta: {
         title: TITLE,
@@ -57,7 +56,7 @@ const router = new Router({
     },
     {
       path: '/about',
-      name: '.about()',
+      name: 'vision',
       component: () => import('./views/About.vue'),
       meta: {
         title: 'iuri.about',
@@ -99,7 +98,7 @@ const router = new Router({
     {
       path: '/preview/:character',
       name: 'Preview',
-      component: () => import('./views/Preview.vue')
+      component: () => import('./views/Preview.vue'),
     },
     {
       path: '*',
@@ -161,39 +160,39 @@ router.beforeEach((to, _from, next) => {
     'is-playing-mario',
     'has-played-mario',
     'is-nav-open',
-    'blue-background',
+    'blue-background'
   )
 
   // Update meta tags
   const nearestWithTitle = to.matched
     .slice()
     .reverse()
-    .find(r => r.meta && r.meta.title)
+    .find((r) => r.meta && r.meta.title)
   // Find the nearest route element with meta tags.
   const nearestWithMeta = to.matched
     .slice()
     .reverse()
-    .find(r => r.meta && r.meta.metaTags)
+    .find((r) => r.meta && r.meta.metaTags)
   // If a route with a title was found, set the document (page) title to that value.
   if (nearestWithTitle) document.title = nearestWithTitle.meta.title
   // Remove any stale meta tags from the document using the key attribute we set below.
   Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(
-    el => el.parentNode.removeChild(el)
+    (el) => el.parentNode.removeChild(el)
   )
   // Skip rendering meta tags if there are none.
   if (!nearestWithMeta) return next()
   // Turn the meta tag definitions into actual elements in the head.
   nearestWithMeta.meta.metaTags
-    .map(tagDef => {
+    .map((tagDef) => {
       const tag = document.createElement('meta')
-      Object.keys(tagDef).forEach(key => {
+      Object.keys(tagDef).forEach((key) => {
         tag.setAttribute(key, tagDef[key])
       })
       // We use this to track which meta tags we create, so we don't interfere with other ones.
       tag.setAttribute('data-vue-router-controlled', '')
       return tag
     })
-    .forEach(tag => document.head.appendChild(tag))
+    .forEach((tag) => document.head.appendChild(tag))
 
   next()
 })
@@ -209,7 +208,7 @@ router.afterEach(() => {
       'is-playing-mario',
       'has-played-mario',
       'is-nav-open',
-      'blue-background',
+      'blue-background'
     )
   }, 1000)
 })

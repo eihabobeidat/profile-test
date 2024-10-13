@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ZenSVG />
+    <!-- <ZenSVG /> -->
   </div>
 </template>
 

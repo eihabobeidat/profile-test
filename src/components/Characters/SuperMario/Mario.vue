@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div :class="['mario', state]" />
+    <!-- <div :class="['mario', state]" /> -->
   </div>
 </template>
 

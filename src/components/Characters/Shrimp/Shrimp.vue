@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ShrimpSVG ref="svg" />
+    <!-- <ShrimpSVG ref="svg" /> -->
   </div>
 </template>
 

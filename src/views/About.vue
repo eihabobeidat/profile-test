@@ -2,57 +2,49 @@
   <div id="about" class="wrapper">
     <div class="pic"></div>
     <div class="static-container">
-      <h1 class="title">about(<span class="params">iuri</span>)</h1>
+      <h1 class="title">our <span class="params"> vision</span></h1>
 
       <TextBlock>
-        <div class="first-fold">
-          <ul class="about-contact">
-            <li v-for="link in data.links" :key="link.url">
-              <a :href="link.url" :title="link.title" target="_blank">
-                {{ link.label || null }}
-                <component v-if="link.icon" :is="link.icon" />
-              </a>
-            </li>
-            <li v-if="data.cv">
-              Download my
-              <a
-                :href="`./${data.cv.file}`"
-                :title="data.cv.title"
-                target="_blank"
-                class="bt"
-              >
-                {{ data.cv.label }}
-                <CVIcon />
-              </a>
-            </li>
-          </ul>
-
-          <p class="-purple">
-            <span v-for="(line, i) in data.description" :key="i">
-              {{ line }}<br />
-            </span>
-          </p>
-          <p class="-gray" v-if="data.experiences">
-            <span v-for="(line, i) in data.subtitles" :key="i">
-              // {{ line }}<br />
-            </span>
-            // {{ data.experiences[0].position }} @
-            {{ data.experiences[0].company }}
-          </p>
-        </div>
+        <div class="first-fold"></div>
 
         <div class="about-grid">
-          <h2>Main skills</h2>
+          <h2>Innovation with Emerging Technology</h2>
           <div class="columns fluent">
-            <ul>
-              <li v-for="(skills, i) in data.skills" :key="i">
-                {{ skills.join(', ') }}<br />
-              </li>
-            </ul>
+            <p>
+              At DELV, we thrive on innovation. We believe that the future of
+              technology lies in AI-powered solutions, and we're leading the
+              way. Our team has extensive experience integrating AI into mobile
+              platforms, allowing us to deliver products that are not only
+              intuitive but also smart, adaptive, and built for tomorrow’s
+              needs.<br />
+            </p>
           </div>
 
-          <h2>Experience</h2>
-          <div class="columns experience">
+          <h2>Enhance Your Products with AI</h2>
+          <div class="columns fluent">
+            <p>
+              Whether you’re looking to integrate ChatGPT capabilities or need
+              real-time data analytics, DELV can help. Our AI solutions enhance
+              user interactions, streamline operations, and provide actionable
+              insights that drive growth. With AI at the core of what we do, we
+              can supercharge your existing products and create new
+              opportunities for success.<br />
+            </p>
+          </div>
+
+          <h2>Web3 & Blockchain</h2>
+          <div class="columns fluent">
+            <p>
+              As technology evolves, so do we. DELV is committed to pushing the
+              boundaries of innovation through Web3 and blockchain technologies.
+              We’re investing in the future of digital transformation by
+              supporting local talent through PhD scholarships and enabling
+              emerging technologies to thrive in Australia.<br />
+            </p>
+          </div>
+
+          <!-- <h2>Experience</h2> -->
+          <!-- <div class="columns experience">
             <ul>
               <li v-for="(experience, i) in data.experiences" :key="i">
                 <strong class="-purple">{{ experience.position }}</strong>
@@ -61,11 +53,11 @@
                 {{ experience.time || null }}
               </li>
             </ul>
-          </div>
+          </div> -->
 
-          <h2>Languages</h2>
+          <!-- <h2>Languages</h2> -->
           <div class="columns languages">
-            <ul>
+            <!-- <ul>
               <li v-for="(langs, level) in data.languages" :key="level">
                 <span class="-comment">// {{ level }}</span
                 ><br />
@@ -73,14 +65,14 @@
                   ><em class="-purple">{{ locale }}</em> {{ label }}<br
                 /></span>
               </li>
-            </ul>
+            </ul> -->
           </div>
 
-          <h2>Also busy with</h2>
+          <!-- <h2>Also busy with</h2> -->
           <div class="columns busy">
-            <ul>
+            <!-- <ul>
               <li v-for="busy in data.busy" :key="busy">{{ busy }}</li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </TextBlock>
@@ -182,10 +174,10 @@ export default {
     display: block;
     position: fixed;
     z-index: 9999;
-    top: 50%;
-    left: -12vw;
+    top: 30%;
+    left: 2vw;
     transform: translate3d(0, -50%, 0);
-    width: 43vw;
+    width: 20vw;
     aspect-ratio: 1/1;
     border-radius: 100%;
     background-image: url(../assets/me.jpg);

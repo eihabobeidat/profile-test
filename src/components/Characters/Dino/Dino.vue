@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DinoSVG />
+    <!-- <DinoSVG /> -->
   </div>
 </template>
 

@@ -95,11 +95,11 @@ export default {
 <style lang="scss">
 // vars
 :root {
-  --purple: #682ae9;
+  --purple: #3986ab;
   --light: #dbdbdb;
   --header-link: #dbdbdb;
-  --header-link-hover: #682ae9;
-  --header-link-hover-icon: #dbdbdb;
+  --header-link-hover: #0e4672;
+  --header-link-hover-icon: #0e4672;
   --header-link-active: rgba(85, 85, 85, 1);
   --std-color: #dbdbdb;
   --bg: #0e1212;

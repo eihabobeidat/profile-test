@@ -4,27 +4,25 @@
       <Potion isPlaying />
 
       <div class="madeof">
-        <p class="-comment">// Made with</p>
+        <p class="-comment">Products</p>
 
         <div class="cols">
           <ul class="col">
-            <li class="ico">(){&lt;/&gt;}</li>
-            <li>Vue 2</li>
-            <li>GSAP 2</li>
-            <li>ScrollMagic</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
+            <li>Prompto</li>
+            <li>OneFleet</li>
+            <li>Paxi</li>
+            <li>Nod</li>
           </ul>
           <ul class="col">
-            <li class="ico">~</li>
-            <li>+62 cups of coffee</li>
-            <li>Endless references</li>
-            <li>2 easter eggs</li>
+            <!-- <li class="ico">~</li> -->
+            <li>location1</li>
+            <li>location2</li>
+            <li>location3</li>
           </ul>
           <ul class="col songs">
-            <li class="ico">
+            <!-- <li class="ico">
               <MusicIcon />
-            </li>
+            </li> -->
             <li v-for="song in SONGS" :key="song.id">
               <a
                 :href="SPOTIFY_TRACK + song.id"
@@ -46,43 +44,43 @@ import Potion from '../Characters/Potion/Potion.vue'
 import TextBlock from '../TextBlock.vue'
 import SceneSection from '../SceneSection.vue'
 
-const SPOTIFY_TRACK = 'https://open.spotify.com/track/'
-const SONGS = [
-  {
-    id: '1pYBTRBbp3PCcdqoke2QSN',
-    label: 'BadBadNotGood',
-  },
+// const SPOTIFY_TRACK = 'https://open.spotify.com/track/'
+// const SONGS = [
+//   {
+//     id: '1pYBTRBbp3PCcdqoke2QSN',
+//     label: 'BadBadNotGood',
+//   },
 
-  {
-    id: '2pCnrWHxYVDWN3S4PgNMa0',
-    label: 'Khruangbin',
-  },
+//   {
+//     id: '2pCnrWHxYVDWN3S4PgNMa0',
+//     label: 'Khruangbin',
+//   },
 
-  {
-    id: '30JzduBPzHCnaErOkczzin',
-    label: 'Toumani Diabaté',
-  },
+//   {
+//     id: '30JzduBPzHCnaErOkczzin',
+//     label: 'Toumani Diabaté',
+//   },
 
-  {
-    id: '5TLObp1kSrfgCZVBIpYGtQ',
-    label: 'Astor Piazzola',
-  },
+//   {
+//     id: '5TLObp1kSrfgCZVBIpYGtQ',
+//     label: 'Astor Piazzola',
+//   },
 
-  {
-    id: '7cwPQGHgob1v9pek8WnQRx',
-    label: 'Isao Tomita',
-  },
+//   {
+//     id: '7cwPQGHgob1v9pek8WnQRx',
+//     label: 'Isao Tomita',
+//   },
 
-  {
-    id: '5I5mTVbYfzg39b0PgVRrTo',
-    label: 'Ryiuchi Sakamoto',
-  },
+//   {
+//     id: '5I5mTVbYfzg39b0PgVRrTo',
+//     label: 'Ryiuchi Sakamoto',
+//   },
 
-  {
-    id: '2JNNbg38OtPLFoc66isKPQ',
-    label: 'Caetano Veloso',
-  },
-]
+//   {
+//     id: '2JNNbg38OtPLFoc66isKPQ',
+//     label: 'Caetano Veloso',
+//   },
+// ]
 
 export default {
   name: 'ThanksScene',
@@ -90,12 +88,12 @@ export default {
   props: {
     isPlaying: Boolean,
   },
-  data() {
-    return {
-      SPOTIFY_TRACK,
-      SONGS,
-    }
-  },
+  // data() {
+  //   return {
+  //     SPOTIFY_TRACK,
+  //     SONGS,
+  //   }
+  // },
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CoffeeMugSVG />
+    <!-- <CoffeeMugSVG /> -->
   </div>
 </template>
 

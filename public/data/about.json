@@ -1,5 +1,5 @@
 {
-  "email": "depaula.iuri@gmail.com",
+  "email": "info@delv.com",
   "links": [
     {
       "url": "https://www.linkedin.com/in/iuridepaula/",
@@ -18,72 +18,23 @@
     "label": "CV"
   },
   "description": [
-    "Frontend developer heavily influenced by storytelling, interactions, and UX. Addicted to music, visual arts, and games.",
-    "From Brazil, based in Barcelona."
+    "Innovation with Emerging Technology At DELV, we thrive on innovation. We believe that the future of technology lies in AI-powered solutions, and we're leading the way. Our team has extensive experience integrating AI into mobile platforms, allowing us to deliver products that are not only intuitive but also smart, adaptive, and built for tomorrow’s needs."
   ],
-  "subtitles": ["he/him"],
+  "subtitles": [""],
   "skills": [
-    ["Web app architecture", "Strategic thinking", "Storytelling"],
-    ["Frontend", "UX/UI"],
-    [
-      "JavaScript",
-      "CSS",
-      "HTML",
-      "React",
-      "Vue",
-      "Node",
-      "Canvas",
-      "SVG",
-      "WebGL"
-    ],
-    ["Figma", "Photoshop", "Illustrator"]
+    []
   ],
   "experiences": [
-    {
-      "position": "Senior Frontend Engineer",
-      "company": "Activision Blizzard King",
-      "time": "* current"
-    },
-    {
-      "position": "Senior Frontend Engineer",
-      "company": "ON AG",
-      "time": "2020-2022"
-    },
-    {
-      "position": "Senior Frontend Engineer",
-      "company": "fromAtoB",
-      "time": "2019-2020"
-    },
-    {
-      "position": "Head of Frontend & UX",
-      "company": "Biz",
-      "time": "2011 - 2019"
-    },
-    {
-      "position": "Senior Frontend Developer",
-      "company": "Tray",
-      "time": "2008 - 2010"
-    },
-    {
-      "position": "Web Designer",
-      "company": "E2W",
-      "time": "2006 - 2008"
-    },
-    {
-      "position": "Freelancer",
-      "company": "Illustrations & Web development"
-    }
+
   ],
   "languages": {
     "fluent": [
-      ["en-US", "English"],
-      ["pt-BR", "Português"]
+      []   
     ],
-    "intermediate": [["es-ES", "Español"]],
+    "intermediate": [],
     "basic": [
-      ["de-DE", "Deutsch"],
-      ["ca-ES", "Català"]
+ 
     ]
   },
-  "busy": ["Pet my dog", "Spanish guitar", "Games", "#eleNÃO"]
+  "busy": []
 }
