@@ -6,9 +6,9 @@
     "node": "16.20.2"
   },
   "scripts": {
-    "start": "vue-cli-service serve",  // Reverted to the original start script
+    "start": "vue-cli-service serve", 
     "build": "vue-cli-service build",
-    "heroku-postbuild": "npm run build",  // Heroku will build the project after dependencies are installed
+    "heroku-postbuild": "npm run build",  
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
