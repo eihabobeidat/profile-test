@@ -2,6 +2,9 @@
   "name": "delv",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "16.20.2"
+  },
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",

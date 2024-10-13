@@ -84,14 +84,12 @@
 import { TimelineMax, Power3, Power0 } from 'gsap'
 import * as ScrollMagic from 'scrollmagic'
 import TextBlock from '../components/TextBlock.vue'
-import LinkedInIcon from '../components/Icon/LinkedInIcon.vue'
-import GithubIcon from '../components/Icon/GithubIcon.vue'
-import CVIcon from '../components/Icon/CVIcon.vue'
+
 import { fetchData } from '@/utils'
 
 export default {
   name: 'AboutView',
-  components: { TextBlock, LinkedInIcon, GithubIcon, CVIcon },
+  components: { TextBlock },
   data() {
     return {
       introTimeline: new TimelineMax(),

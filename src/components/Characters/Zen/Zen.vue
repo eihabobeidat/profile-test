@@ -7,11 +7,10 @@
 <script>
 import { LOOP_EASE_IN_OUT } from '@/constants'
 import { character } from '../character.mixin'
-import ZenSVG from './ZenSVG.vue'
 
 export default {
   name: 'ZenCharacter',
-  components: { ZenSVG },
+  components: {},
   mixins: [character],
   methods: {
     init() {

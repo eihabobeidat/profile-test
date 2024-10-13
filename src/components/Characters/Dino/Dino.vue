@@ -7,7 +7,6 @@
 <script>
 import { random } from '@/utils'
 import { character } from '../character.mixin'
-import DinoSVG from './DinoSVG.vue'
 import { LOOP, LOOP_EASE_IN_OUT } from '../../../constants'
 
 const SONGS = [
@@ -23,7 +22,7 @@ const SONGS = [
 
 export default {
   name: 'DinoCharacter',
-  components: { DinoSVG },
+  components: {},
   mixins: [character],
   data() {
     return {

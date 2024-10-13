@@ -8,11 +8,10 @@
 import { LOOP_EASE_IN_OUT } from '@/constants'
 import { random } from '@/utils'
 import { character } from '../character.mixin'
-import OctopusSVG from './OctopusSVG.vue'
 
 export default {
   name: 'OctopusCharacter',
-  components: { OctopusSVG },
+  components: {},
   mixins: [character],
   methods: {
     init() {

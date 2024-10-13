@@ -39,7 +39,6 @@
 </template>
 
 <script>
-import MusicIcon from '../Icon/MusicIcon.vue'
 import Potion from '../Characters/Potion/Potion.vue'
 import TextBlock from '../TextBlock.vue'
 import SceneSection from '../SceneSection.vue'
@@ -84,7 +83,7 @@ import SceneSection from '../SceneSection.vue'
 
 export default {
   name: 'ThanksScene',
-  components: { TextBlock, SceneSection, Potion, MusicIcon },
+  components: { TextBlock, SceneSection, Potion },
   props: {
     isPlaying: Boolean,
   },

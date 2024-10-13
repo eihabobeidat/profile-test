@@ -7,11 +7,10 @@
 <script>
 import { LOOP_EASE_IN_OUT, LOOP_EASE_OUT } from '@/constants'
 import { character } from '../character.mixin'
-import ABizSVG from './ABizSVG.vue'
 
 export default {
   name: 'BizCharacter',
-  components: { ABizSVG },
+  components: {},
   mixins: [character],
   methods: {
     init() {

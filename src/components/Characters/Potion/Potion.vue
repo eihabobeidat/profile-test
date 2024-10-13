@@ -8,11 +8,10 @@
 import { LOOP_EASE_IN_OUT } from '@/constants'
 import { getNodes } from '@/utils'
 import { character } from '../character.mixin'
-import PotionSVG from './PotionSVG.vue'
 
 export default {
   name: 'PotionCharacter',
-  components: { PotionSVG },
+  components: {},
   mixins: [character],
   methods: {
     init() {

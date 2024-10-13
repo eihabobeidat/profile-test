@@ -8,11 +8,10 @@
 import { LOOP_EASE_IN_OUT } from '@/constants'
 import { random } from '@/utils'
 import { character } from '../character.mixin'
-import CoffeeMugSVG from './CoffeeMugSVG.vue'
 
 export default {
   name: 'CoffeeMugCharacter',
-  components: { CoffeeMugSVG },
+  components: {},
   mixins: [character],
   methods: {
     init() {
